@@ -11,7 +11,12 @@ config_version=4
 [application]
 
 config/name="Piano Game"
+run/main_scene="res://startup.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+GameManager="*res://scripts/game_manager.gd"
 
 [gui]
 
