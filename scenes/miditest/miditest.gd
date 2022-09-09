@@ -26,15 +26,15 @@ func _ready() -> void:
 	for i in 88:
 		var spr := Sprite.new()
 		spr.centered = false
-		spr.position.x = next_position
 		var note := int(i % 12)
 
 		if note in black_keys:
 			spr.texture = black_key_off
-			spr.position.x -= float(key_width) / 2 # TODO: Account for different key width
+			spr.position.x = next_position - (float(key_width) / 2) # TODO: Account for different key width
 			spr.z_index += 1
 		else:
 			spr.texture = white_key_off
+			spr.position.x = next_position
 			next_position += key_width
 
 		add_child(spr)
