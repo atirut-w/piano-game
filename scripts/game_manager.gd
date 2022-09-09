@@ -5,7 +5,7 @@ func _ready() -> void:
 	OS.open_midi_inputs()
 	print("MIDI input initialized")
 
-	var menu = yield(load_resource_async("res://scenes/miditest/miditest.tscn"), "completed")
+	var menu = yield(load_resource_async("res://scenes/piano_roll/piano_roll.tscn"), "completed")
 	var err := get_tree().change_scene_to(menu)
 	assert(err == OK)
 

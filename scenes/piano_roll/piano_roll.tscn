@@ -1,0 +1,14 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://textures/key_black_on.png" type="Texture" id=1]
+[ext_resource path="res://textures/key_white_on.png" type="Texture" id=2]
+[ext_resource path="res://textures/key_white_off.png" type="Texture" id=3]
+[ext_resource path="res://scenes/piano_roll/piano_roll.gd" type="Script" id=4]
+[ext_resource path="res://textures/key_black_off.png" type="Texture" id=5]
+
+[node name="piano" type="Node2D"]
+script = ExtResource( 4 )
+black_key_off = ExtResource( 5 )
+black_key_on = ExtResource( 1 )
+white_key_off = ExtResource( 3 )
+white_key_on = ExtResource( 2 )
