@@ -6,7 +6,8 @@ export(Texture) var black_key_on
 export(Texture) var white_key_off
 export(Texture) var white_key_on
 
-var piano_width: int
+var roll_width: int
+var roll_height: int
 var keys := []
 
 const black_keys := {
@@ -39,7 +40,8 @@ func _ready() -> void:
 		add_child(spr)
 		keys.append(spr)
 
-	piano_width = next_position # TODO: Subtract by 1 or no?
+	roll_width = next_position # TODO: Subtract by 1 or no?
+	roll_height = int(black_key_off.get_size().y)
 
 
 func _input(event: InputEvent) -> void:
