@@ -20,7 +20,6 @@ const black_keys := {
 
 func _ready() -> void:
 	var key_width := int(black_key_off.get_size().x)
-	piano_width = key_width * 88
 	var next_position := 0
 	scale = Vector2(2, 2)
 
@@ -40,6 +39,8 @@ func _ready() -> void:
 
 		add_child(spr)
 		keys.append(spr)
+
+	piano_width = next_position # TODO: Subtract by 1 or no?
 
 
 func _input(event: InputEvent) -> void:
