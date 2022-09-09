@@ -21,7 +21,6 @@ const black_keys := {
 func _ready() -> void:
 	var key_width := int(black_key_off.get_size().x)
 	var next_position := 0
-	scale = Vector2(2, 2)
 
 	for i in 88:
 		var spr := Sprite.new()
