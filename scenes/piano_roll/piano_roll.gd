@@ -1,3 +1,4 @@
+class_name PianoRoll
 extends Node2D
 
 

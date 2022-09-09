@@ -8,6 +8,16 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Node2D",
+"class": "PianoRoll",
+"language": "GDScript",
+"path": "res://scenes/piano_roll/piano_roll.gd"
+} ]
+_global_script_class_icons={
+"PianoRoll": ""
+}
+
 [application]
 
 config/name="Piano Game"
