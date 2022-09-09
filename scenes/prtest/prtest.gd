@@ -2,7 +2,8 @@ extends Node
 
 
 func _ready() -> void:
-    get_viewport().connect("size_changed", self, "_scale_piano_roll")
+    var err := get_viewport().connect("size_changed", self, "_scale_piano_roll")
+    assert(err == OK)
     _scale_piano_roll()
 
 func _scale_piano_roll() -> void:
