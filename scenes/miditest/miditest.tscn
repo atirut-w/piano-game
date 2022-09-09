@@ -1,12 +1,16 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://scenes/miditest/miditest.gd" type="Script" id=1]
-[ext_resource path="res://textures/key_white.png" type="Texture" id=2]
-[ext_resource path="res://textures/key_black.png" type="Texture" id=3]
+[ext_resource path="res://textures/key_black_off.png" type="Texture" id=2]
+[ext_resource path="res://textures/key_white_off.png" type="Texture" id=3]
+[ext_resource path="res://textures/key_black_on.png" type="Texture" id=4]
+[ext_resource path="res://textures/key_white_on.png" type="Texture" id=5]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 1 )
-black_key = ExtResource( 3 )
-white_key = ExtResource( 2 )
+black_key_off = ExtResource( 2 )
+black_key_on = ExtResource( 4 )
+white_key_off = ExtResource( 3 )
+white_key_on = ExtResource( 5 )
 
 [node name="Sprite" type="Sprite" parent="."]

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/key_white.png-26a4fc340d116b385f0a874be468c300.stex"
+path="res://.import/key_black_on.png-8215643ee1ebd0ca425292cfd6221a98.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/key_white.png"
-dest_files=[ "res://.import/key_white.png-26a4fc340d116b385f0a874be468c300.stex" ]
+source_file="res://textures/key_black_on.png"
+dest_files=[ "res://.import/key_black_on.png-8215643ee1ebd0ca425292cfd6221a98.stex" ]
 
 [params]
 
