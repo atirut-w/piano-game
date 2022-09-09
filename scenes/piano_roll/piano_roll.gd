@@ -7,8 +7,7 @@ export(Texture) var black_key_on
 export(Texture) var white_key_off
 export(Texture) var white_key_on
 
-var roll_width: int
-var roll_height: int
+var size := Vector2()
 var keys := []
 
 const black_keys := {
@@ -41,8 +40,8 @@ func _ready() -> void:
 		add_child(spr)
 		keys.append(spr)
 
-	roll_width = next_position # TODO: Subtract by 1 or no?
-	roll_height = int(white_key_off.get_size().y)
+	size.x = next_position # TODO: Subtract by 1 or no?
+	size.y = int(white_key_off.get_size().y)
 
 
 func _input(event: InputEvent) -> void:
