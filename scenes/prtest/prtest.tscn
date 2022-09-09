@@ -4,5 +4,5 @@
 
 [node name="Node2D" type="Node2D"]
 
-[node name="piano" parent="." instance=ExtResource( 1 )]
+[node name="piano_roll" parent="." instance=ExtResource( 1 )]
 scale = Vector2( 2, 2 )
