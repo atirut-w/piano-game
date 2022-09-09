@@ -20,7 +20,7 @@ const black_keys := {
 
 
 func _ready() -> void:
-	var key_width := int(black_key_off.get_size().x)
+	var key_width := int(white_key_off.get_size().x)
 	var next_position := 0
 
 	for i in 88:
@@ -41,7 +41,7 @@ func _ready() -> void:
 		keys.append(spr)
 
 	roll_width = next_position # TODO: Subtract by 1 or no?
-	roll_height = int(black_key_off.get_size().y)
+	roll_height = int(white_key_off.get_size().y)
 
 
 func _input(event: InputEvent) -> void:
