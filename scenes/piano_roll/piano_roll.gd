@@ -40,7 +40,7 @@ func _ready() -> void:
 		add_child(spr)
 		keys.append(spr)
 
-	size.x = next_position # TODO: Subtract by 1 or no?
+	size.x = next_position + 1
 	size.y = int(white_key_off.get_size().y)
 
 
